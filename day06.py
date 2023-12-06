@@ -31,7 +31,7 @@ def problem2(file_path):
     with open(file_path) as file:
         race = [int(line.split(':')[1].strip().replace(' ', '')) for line in
                 file.readlines()]
-        return get_valid_plays(race[0], race[1] + 1)
+        return get_valid_plays(race[0], race[1])
 
 
 ###############################################################################
